@@ -1,11 +1,13 @@
 
 1. Clone project
 
-update  your database details in .env
+2. update  your database details in .env
 
-run php artisan migrate
+3. run php artisan migrate
 
-Run php artisan db:seed
+4. Run php artisan db:seed
+
+That's it
 
 Time taken approx 2 1/2 hours due to fact i wasn't happy with the view and I had to stop
 
