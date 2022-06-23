@@ -14,17 +14,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('shopping')->insert([
+        DB::table('purchases')->insert([
             'item' => 'Bread',
             'quantity' => 1
         ]);
 
-        DB::table('shopping')->insert([
+        DB::table('purchases')->insert([
             'item' => 'Milk',
             'quantity' => 2
         ]);
 
-        DB::table('shopping')->insert([
+        DB::table('purchases')->insert([
             'item' => 'Cheese',
             'quantity' => 5
         ]);
