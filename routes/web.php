@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PurchaseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [PurchaseController::class, 'index']);
+Route::post('/purchases', [PurchaseController::class, 'store']);
+Route::put('/purchases/{id}', [PurchaseController::class, 'update']);
+Route::delete('/purchases/{id}', [PurchaseController::class, 'destroy']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
